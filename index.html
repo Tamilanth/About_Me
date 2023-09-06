@@ -1,9 +1,13 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
-      *
+      body
       {
 	 background:linear-gradient(45deg, #FF05E5, cyan,#FF05E5);
       }
@@ -23,53 +27,70 @@
 	  bacground: white
       }
 
-      footer
-      {
-	  border: dashed black 5px;
-	  font-family: 'Merriweather', serif;
-	  font-weight: bold;
-	  text-align: right;
-	  padding: 50px;
-	  font-size: 11px;
-	  color: white;
+      @media screen and (min-width: 480px) {
+	  body {
+	      font-size: 3vw !important;
+	      padding: 30px;
+	  }
+	  h3 {
+	      font-size: 8vw !important;
+	  }
       }
       
-      p
+      
+      #poem
       {
-	  border: solid black 5px;
+	  border: solid black 1px;
 	  white-space: pre-line;
 	  font-size: 10px;
 	  padding-left: 150px;
 	  font-family: 'Merriweather', serif;
 	  font-weight: bolder;
       }
+      ::selection {
+	  color: darkmagenta;
+      }
+
+      p {
+	  font-size: 10px;
+	  font-family: 'Merriweather', serif;
+      }
 
       h5
       {
-	  border: solid white 5px;
+	
 	  font-size: 5px;
 	  text-align: center;
 	  padding-left: 250px;
       }
 
+      :root {
+	  color-scheme: only light;
+
+      }
+
       h3
       {
-	  background: linear-gradient(45deg, #FF05E5, #0CE7FF,#FF05E5);
-	  border: solid white 5px;
+	  background: transparent;
+	  border: solid white 1px;
 	  font-family: 'Merriweather', serif;
 	  font-weight: bolder;
+	  background: rgba(255,255,255,0.3);
 	  color: white;
+	  padding: 8%;
 	  text-align: center;
       }
       
       </style>
-    <title>Prashanth's About</title>
+    <title>Something i like</title>
   </head>
   <body>
-    <h3>A Father to his son</h3>
-    <h5>- Carl August Sandburg</h5>
+    <h3>A Father to his son
+      <h5>- Carl August Sandburg</h5>
+    </h3>
     </br>
-    <p>
+    <p>Welcome! This is something i like:</p>
+    <p id="poem">
     A father sees his son nearing manhood.
     What shall he tell that son?
     <h>"Life is hard; be steel; be a rock."</h>
@@ -125,10 +146,5 @@
     </br>
     </p>
     </br>
-    
-    <footer>
-      StarBoy
-      </br>
-    </footer>
   </body>
 </html>
